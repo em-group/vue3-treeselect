@@ -4122,9 +4122,9 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/Treeselect.vue?vue&type=template&id=4fa337e8
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/Treeselect.vue?vue&type=template&id=1656f928
 
-function Treeselectvue_type_template_id_4fa337e8_render(_ctx, _cache, $props, $setup, $data, $options) {
+function Treeselectvue_type_template_id_1656f928_render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_HiddenFields = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("HiddenFields");
 
   var _component_Control = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("Control");
@@ -7011,6 +7011,7 @@ const MultiValueItem_exports_ = MultiValueItemvue_type_script_lang_js;
 
 
 
+
 /* harmony default export */ var MultiValuevue_type_script_lang_js = ({
   name: 'vue-treeselect--multi-value',
   inject: ['instance'],
@@ -7047,7 +7048,7 @@ const MultiValueItem_exports_ = MultiValueItemvue_type_script_lang_js;
     //   },
     // }
 
-    return renderValueContainer(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("transition-group"), {
+    return renderValueContainer(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(external_commonjs_vue_commonjs2_vue_root_Vue_["TransitionGroup"], {
       "class": "vue-treeselect__multi-value",
       "tag": "div",
       "name": "vue-treeselect__multi-value-item--transition",
@@ -7473,6 +7474,7 @@ const Tip_exports_ = Tipvue_type_script_lang_js;
 
 
 
+
 function _isSlot(s) {
   return typeof s === 'function' || Object.prototype.toString.call(s) === '[object Object]' && !Object(external_commonjs_vue_commonjs2_vue_root_Vue_["isVNode"])(s);
 }
@@ -7536,7 +7538,7 @@ var Option = {
         return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", {
           "class": "vue-treeselect__option-arrow-container",
           "onMousedown": this.handleMouseDownOnArrow
-        }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("transition"), {
+        }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(external_commonjs_vue_commonjs2_vue_root_Vue_["Transition"], {
           "name": "vue-treeselect__option-arrow--prepare",
           "appear": true
         }, {
@@ -7715,7 +7717,7 @@ var Option = {
 
     return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", {
       "class": listItemClass
-    }, [this.renderOption(), node.isBranch ? Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("transition"), {
+    }, [this.renderOption(), node.isBranch ? Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(external_commonjs_vue_commonjs2_vue_root_Vue_["Transition"], {
       "name": "vue-treeselect__list--transition"
     }, _isSlot(_slot = this.renderSubOptionsList()) ? _slot : {
       default: function _default() {
@@ -7734,6 +7736,7 @@ const Option_exports_ = Optionvue_type_script_lang_js;
 
 /* harmony default export */ var components_Option = (Option_exports_);
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/Menu.vue?vue&type=script&lang=js
+
 
 
 
@@ -8015,7 +8018,7 @@ var directionMap = {
       "ref": "menu-container",
       "class": "vue-treeselect__menu-container",
       "style": this.menuContainerStyle
-    }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("transition"), {
+    }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(external_commonjs_vue_commonjs2_vue_root_Vue_["Transition"], {
       "name": "vue-treeselect__menu--transition"
     }, Menuvue_type_script_lang_js_isSlot(_slot = this.renderMenu()) ? _slot : {
       default: function _default() {
@@ -8228,16 +8231,7 @@ const MenuPortal_exports_ = MenuPortalvue_type_script_lang_js;
         'vue-treeselect--append-to-body': this.appendToBody
       };
     }
-  } // render() {
-  //   return (
-  //     <div ref="wrapper" class={this.wrapperClass}>
-  //       <HiddenFields />
-  //       <Control ref="control" />
-  //       {this.appendToBody ? <MenuPortal ref="portal" /> : <Menu ref="menu" />}
-  //     </div>
-  //   )
-  // },
-
+  }
 }));
 // CONCATENATED MODULE: ./src/components/Treeselect.vue
 
@@ -8245,7 +8239,7 @@ const MenuPortal_exports_ = MenuPortalvue_type_script_lang_js;
 
 
 
-const Treeselect_exports_ = /*#__PURE__*/exportHelper_default()(Treeselectvue_type_script_lang_js, [['render',Treeselectvue_type_template_id_4fa337e8_render]])
+const Treeselect_exports_ = /*#__PURE__*/exportHelper_default()(Treeselectvue_type_script_lang_js, [['render',Treeselectvue_type_template_id_1656f928_render]])
 
 /* harmony default export */ var Treeselect = (Treeselect_exports_);
 // EXTERNAL MODULE: ./styles/style.less

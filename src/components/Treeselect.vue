@@ -14,7 +14,7 @@
   import Menu from './Menu'
   import MenuPortal from './MenuPortal'
 
-  import {defineComponent,h} from 'vue';
+  import {defineComponent} from 'vue';
   export default defineComponent({
     name: 'vue-treeselect',
     mixins: [ treeselectMixin ],
@@ -39,16 +39,7 @@
           'vue-treeselect--append-to-body': this.appendToBody,
         }
       },
-    },
+    }
 
-    // render() {
-    //   return (
-    //     <div ref="wrapper" class={this.wrapperClass}>
-    //       <HiddenFields />
-    //       <Control ref="control" />
-    //       {this.appendToBody ? <MenuPortal ref="portal" /> : <Menu ref="menu" />}
-    //     </div>
-    //   )
-    // },
   })
 </script>
